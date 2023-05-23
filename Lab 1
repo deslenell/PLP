@@ -1,0 +1,31 @@
+History
+Answer the following questions about your programming language:
+What is the name of your language? PHP
+When/where was it created, and by whom? Was it written to address a particular problem or need?
+PHP was created in 1994 by Rasmus Lerdorf.  He wanted to perform more advanced tasks that HTML could not do on his webpage. For example tracking the number of visits to his website. He first used Common Gateway Interface (CGI scripts) that ran in C code. He named the scripts Personal Home Page Tools. This is one of the first codes to be executed on a server and sent to a browser. Eventually Lerdorf opened source PHP tools in June 1995 so that other developers could contribute as well. Eventually  with the evolution of PHP the acronym now stands for Hypertext Processor. 
+What types of programming is your language primarily used for (ex: web sites, video games, mobile devices, parsing, etc.). If your language is multi-purpose, provide some examples of different projects it's been used for.
+PHP is primarily used for websites, more specifically building websites and web applications. Some of its features include “processing form data” database management,  and server administration such as who can have access to editing websites or entering other parts of the website.
+Where will you get information about this language when it's time to start programming in it? At the end of your assignment, provide a list of the names of books, website URLs, or any other resources that relate to your language in particular.
+I will get my information on Linkedin Learning, this platform has a lot of information on PHP. I also will be using FreeCodeCamp as another resource for learning PHP programming, URL = https://www.youtube.com/watch?v=OK_JCtrrv-c&list=LL&index=7
+
+
+
+Getting Started
+Now that you've picked a language and learned about its history and uses, it's time to actually get it set up and use it. To do this you must:
+Install your programming language and anything else that it needs to run (a programming environment or something similar)
+Write a "hello world" program in that language (checking the Internet for one is fine)
+Run the program
+Be prepared to show me that you can run the program during lab
+Your write-up should address the following questions. Try to answer them in such a way that someone else would be able to follow your instructions and run your program:
+What did you need to do to install the language?
+I first needed to go to www.php.net website and click on the downloads tab and choose Windows 64 bit operating system downloads for PhP. After that I needed to configure my Windows Path variable so that my operating system(Windows) knows where the PHP folder that I downloaded. To do this I search for environment variables down in the left corner search bar and clicked on the “Edit this System Environment Variables”  which took me to this screen
+Next I clicked on the Environment Variables button and a new window will show up. After that I  double clicked on a variable called Path then pressed the edit button.
+After that another page will show up and I clicked on the new button and pasted the location of where I downloaded the php folder. Lastly, I confirmed PHP was downloaded successfully by pulling up my command prompt and entering the command php -V. This showed the latest version that I have of php.
+
+Does this language come with a recommended programming environment? What is it? If not, how did you pick the one that you'll be using?
+Php does not have a recommended programming environment. I chose Visual Studio Code because I use this text editor the most. 
+How do you run programs in that language?
+I first go to Visual Studio Code and select the folder that I directed php to run through.
+4. How do you write comments in your language?
+You can write comments by using two backslashes for example if I want to comment hello world in PHP it would be // hello world.
+You must address all of the above sets of questions and the answers to these questions will be put in a GitHub repository that you create, which you will provide the link to. Make sure that your answers are clear, accurate, and fully formed: remember that these tutorials are public, and GitHub users don't have the context of the assignment that you do. Explain the reasoning behind the answers as much as possible. If there is no clear-cut answer to a question, explain why not. And cite your sources!
