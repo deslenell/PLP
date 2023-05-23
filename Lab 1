@@ -18,12 +18,15 @@ Run the program
 Be prepared to show me that you can run the program during lab
 Your write-up should address the following questions. Try to answer them in such a way that someone else would be able to follow your instructions and run your program:
 What did you need to do to install the language?
-I first needed to go to www.php.net website and click on the downloads tab and choose Windows 64 bit operating system downloads for PhP. After that I needed to configure my Windows Path variable so that my operating system(Windows) knows where the PHP folder that I downloaded. To do this I search for environment variables down in the left corner search bar and clicked on the “Edit this System Environment Variables”  which took me to this screen
-Next I clicked on the Environment Variables button and a new window will show up. After that I  double clicked on a variable called Path then pressed the edit button.
-After that another page will show up and I clicked on the new button and pasted the location of where I downloaded the php folder. Lastly, I confirmed PHP was downloaded successfully by pulling up my command prompt and entering the command php -V. This showed the latest version that I have of php.
 
+I visited the official website, www.php.net, and navigated to the downloads tab. From there, I chose the appropriate Windows 64-bit operating system download for PHP.
+Once the download was complete, I needed to configure the Windows Path variable to let my operating system (Windows) recognize the location of the downloaded PHP folder. To do this, I utilized the search bar located in the bottom left corner and searched for "environment variables." Then, I selected the option "Edit this System Environment Variables," which directed me to the respective screen.
+On the Environment Variables screen, I clicked on the "Edit" button associated with a variable named "Path."
+This action opened a new window where I proceeded to click on the "New" button. Subsequently, I pasted the location path of the downloaded PHP folder into the provided field.
+Finally, to confirm that PHP was successfully downloaded, I opened the command prompt and entered the command "php -V." This command displayed the latest version of PHP installed on my system.
 Does this language come with a recommended programming environment? What is it? If not, how did you pick the one that you'll be using?
 Php does not have a recommended programming environment. I chose Visual Studio Code because I use this text editor the most. 
+
 How do you run programs in that language?
 I first go to Visual Studio Code and select the folder that I directed php to run through.
 4. How do you write comments in your language?
