@@ -1,12 +1,23 @@
 History
 Answer the following questions about your programming language:
 What is the name of your language? PHP
+
 When/where was it created, and by whom? Was it written to address a particular problem or need?
-PHP was created in 1994 by Rasmus Lerdorf.  He wanted to perform more advanced tasks that HTML could not do on his webpage. For example tracking the number of visits to his website. He first used Common Gateway Interface (CGI scripts) that ran in C code. He named the scripts Personal Home Page Tools. This is one of the first codes to be executed on a server and sent to a browser. Eventually Lerdorf opened source PHP tools in June 1995 so that other developers could contribute as well. Eventually  with the evolution of PHP the acronym now stands for Hypertext Processor. 
-What types of programming is your language primarily used for (ex: web sites, video games, mobile devices, parsing, etc.). If your language is multi-purpose, provide some examples of different projects it's been used for.
-PHP is primarily used for websites, more specifically building websites and web applications. Some of its features include “processing form data” database management,  and server administration such as who can have access to editing websites or entering other parts of the website.
-Where will you get information about this language when it's time to start programming in it? At the end of your assignment, provide a list of the names of books, website URLs, or any other resources that relate to your language in particular.
-I will get my information on Linkedin Learning, this platform has a lot of information on PHP. I also will be using FreeCodeCamp as another resource for learning PHP programming, URL = https://www.youtube.com/watch?v=OK_JCtrrv-c&list=LL&index=7
+PHP was created in 1994 by Rasmus Lerdorf.  He wanted to perform more advanced tasks that HTML could not do on his webpage. 
+For example tracking the number of visits to his website. He first used Common Gateway Interface (CGI scripts) that ran in C code.
+He named the scripts Personal Home Page Tools. This is one of the first codes to be executed on a server and sent to a browser. 
+Eventually Lerdorf opened source PHP tools in June 1995 so that other developers could contribute as well.
+In addition, with the evolution of PHP the acronym now stands for Hypertext Processor. 
+What types of programming is your language primarily used for (ex: web sites, video games, mobile devices, parsing, etc.). 
+If your language is multi-purpose, provide some examples of different projects it's been used for.
+PHP is primarily used for websites, more specifically building websites and web applications. 
+Some of its features include “processing form data” database management, and server administration such as who can have access to editing websites or entering other parts of the website.
+Where will you get information about this language when it's time to start programming in it?
+
+At the end of your assignment, provide a list of the names of books, website URLs, or any other resources that relate to your language in particular.
+
+I will get my information on Linkedin Learning, this platform has a lot of information on PHP. 
+I also will be using FreeCodeCamp as another resource for learning PHP programming, URL = https://www.youtube.com/watch?v=OK_JCtrrv-c&list=LL&index=7
 
 
 
@@ -20,15 +31,26 @@ Your write-up should address the following questions. Try to answer them in such
 What did you need to do to install the language?
 
 I visited the official website, www.php.net, and navigated to the downloads tab. From there, I chose the appropriate Windows 64-bit operating system download for PHP.
-Once the download was complete, I needed to configure the Windows Path variable to let my operating system (Windows) recognize the location of the downloaded PHP folder. To do this, I utilized the search bar located in the bottom left corner and searched for "environment variables." Then, I selected the option "Edit this System Environment Variables," which directed me to the respective screen.
+Once the download was complete, I needed to configure the Windows Path variable to let my operating system (Windows) recognize the location of the downloaded PHP folder. 
+To do this, I utilized the search bar located in the bottom left corner of my computerand searched for "environment variables." 
+Then, I selected the option "Edit this System Environment Variables," which directed me to the respective screen.
 On the Environment Variables screen, I clicked on the "Edit" button associated with a variable named "Path."
-This action opened a new window where I proceeded to click on the "New" button. Subsequently, I pasted the location path of the downloaded PHP folder into the provided field.
-Finally, to confirm that PHP was successfully downloaded, I opened the command prompt and entered the command "php -V." This command displayed the latest version of PHP installed on my system.
+This action opened a new window where I proceeded to click on the "New" button. I pasted the location where the downloaded PHP folder is stored in my computer
+into the provided field. For example, the location for me was C:\php.
+Finally, to confirm that PHP was successfully downloaded, I opened the command prompt and entered the command "php -V."
+This command displayed the latest version of PHP installed on my system.
+
 Does this language come with a recommended programming environment? What is it? If not, how did you pick the one that you'll be using?
 Php does not have a recommended programming environment. I chose Visual Studio Code because I use this text editor the most. 
 
 How do you run programs in that language?
 I first go to Visual Studio Code and select the folder that I directed php to run through.
+
 4. How do you write comments in your language?
 You can write comments by using two backslashes for example if I want to comment hello world in PHP it would be // hello world.
-You must address all of the above sets of questions and the answers to these questions will be put in a GitHub repository that you create, which you will provide the link to. Make sure that your answers are clear, accurate, and fully formed: remember that these tutorials are public, and GitHub users don't have the context of the assignment that you do. Explain the reasoning behind the answers as much as possible. If there is no clear-cut answer to a question, explain why not. And cite your sources!
+
+
+You must address all of the above sets of questions and the answers to these questions will be put in a GitHub repository that you create, 
+which you will provide the link to. Make sure that your answers are clear, accurate, and fully formed: remember that these tutorials are public, 
+and GitHub users don't have the context of the assignment that you do. Explain the reasoning behind the answers as much as possible. 
+If there is no clear-cut answer to a question, explain why not. And cite your sources!
