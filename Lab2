@@ -1,2 +1,74 @@
 # PHP: Data types and naming conventions 
 
+##**Discussion questions:** 
+
+##**1. Naming requirements for PHP**
+-The naming requirements for variables in PHP is first a variable must start with a dollar sign followed by a letter or a underscore 
+-Numbers and special characters such as(&, %, #, or@) are not allowed.
+-You should avoid using special keywords= or, name, for, while.
+Example - <?php $age = 23; ?> 
+		echo  $age;
+		(This will print = 23)
+    
+
+##**2. The Naming conventions**
+-When creating a function name “use underscores between words” and for “class names use both the camelCase and PascalCase rules.”
+-Ex- function name=  function curl_close(){ }
+       Class name = class WP_HTTP {}
+-These rules are enforced by the interpreter.
+
+
+##**3. Is PHP statically or dynamically typed?**
+-Php is a dynamically typed language, you can change the value in a variable.
+Ex-  <?php $age = 23; ?> 
+       <?php $ age = 23 + 1;?>
+		echo  $age;
+		(This will print = 24)
+
+
+
+##884.Is PHP Strongly typed or weakly typed?**
+-Php is a weakly typed language; it does not need to declare the data type when creating a variable.
+Ex-When you print $number = "5" + 6;
+                   echo $number;
+                  (This will print = 11)
+The Example shows that an error does not occur!
+
+
+##**5.PHP limitations (or lack thereof)**
+There are no limitations in php programming when creating variables for ints, floats, arrays, booleans. 
+However,Php does not have a special character or keyword for creating dictionaries. 
+You can use arrays to create something similar to a dictionary.
+
+
+##**Different DataTypes in PHP**
+• int 
+<?php
+$interger = 8 * 8;
+echo $interger;
+?>
+---------------------------------
+• string
+<?php
+$str = "Hello World!";
+echo $str;
+?>
+-----------------------------------
+• floating-point number 
+<?php
+$interger = 8.5 * 8.5;
+echo $interger;
+?>
+-------------------------------------
+• boolean 
+<?php
+$is_false = 5 > 10;
+var_dump($is_false);
+?>
+-----------------------------------------
+• array/list 
+<?php
+$comic_books = array("invincible", "saga", "black hammer", "far sector");
+print_r($comic_books)
+?>
+
