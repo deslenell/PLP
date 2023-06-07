@@ -72,3 +72,18 @@ $comic_books = array("invincible", "saga", "black hammer", "far sector");
 print_r($comic_books)
 ?>
 
+
+###**Citation = **
+(https://www.php.net/manual/en/userlandnaming.rules.php#:~:text=PHP%20owns%20the%20top%2Dlevel,the%20name%20of%20the%20extension.)
+
+(https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#naming-conventions)
+
+(https://www.php.net/docs.php)
+
+Linkedin Learning = Lesson PHP for WordPress
+
+
+
+
+
+
