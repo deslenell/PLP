@@ -1,0 +1,114 @@
+#**PHP: else,switch, logical operators**
+
+##**PHP Conditional Statements**
+-If, elseif, and else are the only conditional statements available in PhP.
+-The boolean values in Php is True and False as well.
+-Below is an example of simple conditional statements in PHP
+Ex-
+● a one-condition if/else statement (i.e. "if x == true") 
+<?php
+$a = 5;
+$b = 4;
+
+if ($a > $b) {
+    echo "a is larger than b";
+} else {
+    echo "a is not larger than b";
+}
+
+
+?>
+-----------------------------------------------------------
+
+
+
+
+##**PHP and Short-Circuit Evaluation**
+-Yes Php does use short-circuit evaluations which is && for And , || for Or and != for Not.
+-Below are some examples
+Ex-1
+● short-circuit logic 
+<?php
+$x = true;
+$y = false;
+
+
+if ($x || $y) {
+    echo "At least one of x or y is false";
+} else {
+    echo "Both x and y are true";
+}
+
+?>
+
+------------
+
+Ex-2
+<?php
+$x = 5;
+$y = 8;
+
+if ($x > 0 && $y < 10) {
+    echo "Both x and y are true";
+} else {
+    echo "Both x and y are false";
+}
+?>
+
+-------------------------------------------------------------
+
+
+
+
+##**Dealing with the “dangling else” problem in PHP**
+-In Php you can use “if – else if – else” format.
+-To specifically indicate which “else” belongs to which “if”. 
+-Below is the solution
+
+Ex- if(condition) {
+}
+else if(condition-1) {
+}
+else if(condition-2){
+}
+else{
+}
+
+
+
+
+
+------------------------------------------------------------------
+##**PHP and Twitch Case Statements**
+-Php does support switch statements;  
+-The break statement is required to get out of twitch statements. 
+-However, the continue statement is not.
+-Below is an example
+
+Ex-
+<?php
+$fruit = "apple";
+
+
+switch ($fruit) {
+    case "apple":
+        echo "Selected fruit is apple";
+        break;
+    case "banana":
+        echo "Selected fruit is banana";
+        break;
+    default:
+        echo "Selected fruit is not recognized";
+        break;
+}
+?>
+
+
+
+
+
+#**Citations**
+
+(https://www.geeksforgeeks.org/dangling-else-ambiguity/#)
+
+Linkedin Learning Video = PhP Essential Training by Kevin Skoglund.
