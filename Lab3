@@ -1,0 +1,101 @@
+#**PHP  If/else, switch, logical operators**
+
+##**How to Write Conditional Statements in PHP**
+-If, elseif, and else are the only conditional statements available in PhP.
+-Any other form of an if-else statement will not work.
+-Below is a basic example of an if/elif/else statement.
+EX-
+● if/elif/else statements 
+<?php
+$x = 10;
+if ($x < 5) {
+    echo "x is less than 5";
+} elseif ($x > 5) {
+    echo "x is greater than 5";
+} else {
+    echo "x is equal to 5";
+}
+
+?>
+
+
+##**PHP and Short Circut Logic**
+-Php does use short-circuit evaluations which is && for And , || for Or and != for Not.
+-The boolean values in Php is True and False
+-Below are examples of a simple circut logic
+Ex 1-
+● short-circuit logic 
+<?php
+$x = true;
+$y = false;
+
+if ($x || $y) {
+    echo "At least one of x or y is false";
+} else {
+    echo "Both x and y are true";
+}
+
+?>
+-----------------------------------------
+Ex 2-
+<?php
+$x = 5;
+$y = 8;
+
+if ($x > 0 && $y < 10) {
+    echo "Both x and y are true";
+} else {
+    echo "Both x and y are false";
+}
+
+?>
+
+
+
+##**Dealing with the “dangling else” problem in PHP**
+In Php you can use “if – else if – else” format 
+so as to specifically indicate which “else” belongs to which “if”. 
+Ex- if(condition) {
+}
+else if(condition-1) {
+}
+else if(condition-2){
+}
+else{
+}
+
+
+
+##**Twitch Statements in PHP**
+-Yes Php does support switch statements.  
+-The break statement is required to get out of twitch statements. 
+-However, the continue statement is not.
+-Below is an example of an twitch statement
+Ex-
+<?php
+$fruit = "apple";
+
+
+switch ($fruit) {
+    case "apple":
+        echo "Selected fruit is apple";
+        break;
+    case "banana":
+        echo "Selected fruit is banana";
+        break;
+    default:
+        echo "Selected fruit is not recognized";
+        break;
+}
+
+
+
+
+##**Citations-**
+
+
+https://www.geeksforgeeks.org/dangling-else-ambiguity/#
+
+Linkedin Learning Video = PhP Essential Training by Kevin Skoglund.
+
+
