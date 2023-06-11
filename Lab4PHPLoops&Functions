@@ -1,0 +1,214 @@
+**PHP has multiple types of loops this includes a while loop, for loop and a foreach loop. 
+I will explain each type of loop down below.**
+
+##**WHILE LOOP-**
+The structure of an while starts with the word While and then the condition in parentheses. 
+Next is the statement. When doing multiple statements you need to add them inside curly braces. 
+An example of a simple While loop is provided down below.
+
+**The Structure = **  while (condition) {
+statement;
+}
+**Example = **
+<?php
+// while loop example
+$count = 1;
+while($count <= 10){
+echo $count. ", ";
+    $count = $count + 1;
+}
+?>
+
+The while loop example shows that the variable count is equal to 1. 
+The variable will loop around and increase by 1 as long as it's less than 10 or equal to 10. 
+Once it reaches 10 it will stop. I also on the fourth line I included a period and parentheses 
+with a comma to space out the numbers when I print it out.
+The results = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+
+#**For Loop**
+The structure of a for loop starts with the word For followed by parentheses with three expressions 
+separated by semicolons. The first expression is to initialize a statement. 
+If we look back at the previous example in while loops the initialize statement can be $count = 1. 
+The second expression is the condition and the last expression is what you would want to happen after the loop. 
+I will reuse the while loop example and format it into a For loop for better understanding.
+
+**The Structure =** for (expression1; expression2; expression3) {
+    statement
+}
+
+**Example = **
+	<?php
+for($count = 1; $count <= 10; $count = $count + 1){
+   	 echo $count . ", ";
+}
+?>
+
+The For loops is doing the same thing as a while loop. The only difference is the format.
+The results = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+
+#**FOREACH LOOP- **
+A ForEach Loop is focused on iterating through each element in an array. 
+The structure of the loop starts with the word foreach followed by parentheses. 
+Inside the parentheses should be the name of the list you would like to iterate through 
+then the word AS and then a name you would like to create to represent the value that is going
+through each element in the array. Last is making sure to put curly braces in between 
+the statements you would like to write in the loop. I provided a simple example 
+and the structure of a FOREACH loop below.
+
+
+
+
+**Structure = **
+foreach ($array as $value) {
+   }
+
+**Example = **
+
+$fruits = array("apple", "banana", "orange");
+
+foreach ($fruits as $fruit) {
+    echo $fruit . ", ";
+}
+
+
+The Results= apple, banana, orange
+
+The code example shows that a FOREACH Loop is different from a 
+while and a for loop based on its structure and it will iterate 
+and visit each element in an array.
+
+#**PHP Functions-**
+PHP functions are different from other programming languages as functions can be placed anywhere in
+your code as long as it's defined before it's been called. However it is advised to not place 
+functions where they are not being used.
+PHP structure for declaring a function is first to type the word function and then the name you would like
+to call the function. Next in parentheses list the parameters and separate them by commas. 
+If you are going to write more than one statement in the body of the function then but curly braces 
+inside of them. Last, is to call the function which is just typing the function’s name after the
+curly braces.  Also, PHP accepts multiple parameters and it can be of different data types as well. 
+I have provided an example of the structure and a simple function below.
+
+**Structure = **
+function functionName($param1, $param2, ...) {
+	statement;
+}
+
+Call functionName()
+
+
+**Example = **
+
+<?php
+function hello($word){
+    echo "Hi {$word}";
+}
+
+
+hello("Des!")
+?>
+
+#**Returning Multiple Values - **
+You can return multiple values in a function and this is possible by putting the values you want to return
+in an array and creating another variable and storing the function for it to be called.  
+Next you would want to access each element in the array by the index of the variable you store the function in.
+An example is provided below
+**Example -**
+<?php
+function des_books(){
+    $book1 = "Invincible";
+    $book2 = "Saga";
+    $book3 = "The Princess Trap";
+
+
+    $collection = array($book1, $book2, $book3);
+   
+    return $collection;
+
+
+}
+
+
+$calling_des_books = des_books();
+
+
+echo "Book1:  " . $calling_des_books[0];
+echo "  Book2: " . $calling_des_books[1];
+echo "  Book3:  " . $calling_des_books[2];
+?>
+
+
+
+Results - Book1:  Invincible  Book2: Saga  Book3:  The Princess Trap
+ 
+In my Example I created a function called des_books and created 3 variables called book1, book2, and book3.
+Then I made an array named collection and return the array. Next I stored the function 
+in a variable called des_books. Lastly, I printed each element in the collection list 
+based on the calling_des_books index. I made sure to fix the spacing when I printed the
+values so they would not be mushed together.
+
+
+
+#**Other Functions - **
+If you want to split a string you can utilize a function called str_split which will split 
+a string by putting them into 2 different indexes in an array. I provided an example below.
+
+**Example- **
+
+<?php
+function num($a){
+    $mul = str_split($a,7);
+    print_r($mul);
+}
+num("DesaraeCotton")
+?>
+Results - 
+In the str_split function you can see that it takes in 2 arguments one is the variable of the string you want to 
+split and the other argument is which index in the array you want to split the string. I picked 7 to split my name, 
+you can see the output below. 
+Desarae
+Cotton
+
+#**Recursive Function-**
+PHP has a built-in function that can call itself named the recursive function. An example is provided below.
+
+**Example - **
+
+function factorial($n) {
+    if ($n === 0 || $n === 1) {
+        return 1;
+    } else {
+        return $n * factorial($n - 1);
+    }
+}
+
+$number = 5;
+$factorialResult = factorial($number);
+
+echo "Factorial of $number is: $factorialResult";
+
+
+
+#**PHP and Pass-By Reference and Value**
+
+Yes PHP supports both pass-by-value and pass-by-reference an example is down below.
+
+function passByValue($num) {
+    $num = 10;
+}
+
+function passByReference(&$num) {
+    $num = 10;
+}
+
+$value = 5;
+
+passByValue($value);
+echo "Pass-by-Value: " . $value . "<br>";  // Output: 5
+
+passByReference($value);
+echo "Pass-by-Reference: " . $value . "<br>";  // Output: 10
+
+
+#**Citations** = 
+https://www.php.net/manual/en/function.str-split.php
+Linkedin Learning - PHP Essential Training 
