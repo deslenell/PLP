@@ -1,0 +1,112 @@
+#*Classes and Inheritance* 
+-In PHP, you can create objects using classes. 
+A class is like a blueprint that defines how objects should 
+be created. It provides a set of instructions for creating 
+instances (objects) based on that blueprint.
+------------------------------------------------------------------
+#**1. Does PHP support objects or something similar?**
+Yes, PHP supports objects through its object-oriented programming (OOP) features. 
+You can define classes to create objects and inheritance.
+-----------------------------------------------------------------------
+#** Naming conventions:**
+   - Classes: Class names are typically written in PascalCase (MyClass).
+   - Instance variables: Instance variables usually follow camelCase (myVariable).
+   - Functions (methods): Method names also follow camelCase (myMethod)
+-----------------------------------------------------------------------------
+#**2. Does PHP have standard methods forfunctions that serve a similar purpose across all objects?**
+   PHP provides several "magic" methods that serve specific purposes for objects. 
+   Some of these methods include:
+   - `__construct()`: This method is used to initialize an object. 
+   - `__get()` : This method is used to retrieve the value in an object
+ `__set()`: This method allows you to modify or change the value in an object
+
+---------------------------------------------------------------------------------
+
+3. How does inheritance work in PHP? Does it support multiple inheritance?
+   In PHP, inheritance works by using the `extends` keyword. 
+   PHP only supports single inheritance, which means a class 
+   can only inherit from a single parent class.
+
+   Example of inheritance in PHP:
+      
+      <?php
+class Person {
+    public $name;
+    public $birthdate;
+
+function set_Name() {
+    $this->name;
+  }
+
+  function get_Name() {
+    return $this->name;
+  }
+
+function set_Birthyear() {
+   $this->birthdate;
+}
+
+function get_Birthyear() {
+  return $this->birthdate;
+}
+
+// Constructor function will initialize the objects ( will give the variables an intial value)
+public function __construct($name, $birthdate) {
+      $this->name = $name;
+      $this->birthdate = $birthdate;
+  }
+}
+//extends keyword is used for a class to inherit from another class here.
+class FavComic extends Person{
+  public $comicbook;
+
+  public function get_Comic(){
+    return $this->comicbook;
+  }
+
+  public function set_Comic(){
+    $this->comicbook;
+
+  }
+
+  public function __construct($comicbook){
+    $this-> comicbook = $comicbook;
+  }
+
+}
+
+// creating the object
+$object1 = new Person("Desarae ", 23);
+$object2 = new FavComic(" Saga");
+
+//Accessing the object through methods
+echo  $object1->get_name();
+echo  $object1->get_birthyear();
+echo  $object2->get_comic();
+?>
+-----------------------------------------------------------------
+#**4. How does PHP deal with overloading method names and resolving those calls?**
+PHP will handle overloading method names by only using the last method that is defined. 
+Meaning if there are multiples of the same method but different parameters. 
+PHP will only execute the last one. Also, overloading methods need to be public to work.
+-----------------------------------------------------------------------   
+
+#**5. Additional information about objects and inheritance in PHP:**
+   - Property Visibility: PHP provides three kinds of property visibility for values: 
+   `public`, `protected`, and `private`. Public means  the property can be accessed anywhere.
+   Protected means the property can only be accessed in the class and by classes that inherit. 
+   Private means the property can only be accessed in the class.
+-------------------------------------------------------------------------------------------
+Sources:
+- PHP Manual: Classes and Objects - https://www.php.net/manual/en/language.oop5.php
+- PHP Manual: Object Inheritance - https://www.php.net/manual/en/keyword.extends.php
+- PHP Manual: Magic Methods - https://www.php.net/manual/en/language.oop5.magic.php
+-PHP Manual: Overloading-https://www.php.net/manual/en/language.oop5.overloading.php
+-PHP Manual: Visibilty: https://www.php.net/manual/en/language.oop5.visibility.php
+-Book “Objects.” O’Reilly Online Learning, 2023, learning.oreilly.com/library/view/programming-php-4th/9781492054122/ch06.html#destructors. Accessed 15 June 2023.
+
+‌
+
+
+
+
